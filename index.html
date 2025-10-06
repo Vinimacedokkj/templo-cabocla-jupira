@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templo de Umbanda Cabocla Jupira</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/img/logo.jpg">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html"><img src="assets/img/logo.jpg" alt="Logo Templo Cabocla Jupira" class="logo"></a>
+                    <span class="logo-text">Templo de Umbanda<br>Cabocla Jupira</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#inicio" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="mae-santo.html" class="nav-link">Mãe de Santo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="servicos.html" class="nav-link">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção Inicial com Carrossel -->
+    <section id="inicio" class="hero">
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-slide active">
+                    <div class="slide-content">
+                        <h1>Bem-vindos ao Templo de Umbanda Cabocla Jupira</h1>
+                        <p>Um espaço sagrado de fé, cura e transformação espiritual</p>
+                        <a href="#sobre" class="btn-primary">Conheça Nossa História</a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="https://via.placeholder.com/800x600/016901/ffffff?text=Terreiro+Externo" alt="Terreiro">
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="slide-content">
+                        <h1>Giras e Trabalhos Espirituais</h1>
+                        <p>Participe das nossas giras e receba as bênçãos dos Orixás</p>
+                        <a href="#giras" class="btn-primary">Próximas Giras</a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="https://via.placeholder.com/800x600/2E2D9C/ffffff?text=Gira+Espiritual" alt="Gira">
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="slide-content">
+                        <h1>Consultas e Orientação</h1>
+                        <p>Jogos de búzios, consultas e trabalhos espirituais</p>
+                        <a href="servicos.html" class="btn-primary">Nossos Serviços</a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="https://via.placeholder.com/800x600/016901/ffffff?text=Consulta+Espiritual" alt="Consulta">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-btn prev" onclick="changeSlide(-1)">❮</button>
+                <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
+            </div>
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="currentSlide(1)"></span>
+                <span class="indicator" onclick="currentSlide(2)"></span>
+                <span class="indicator" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+
+	<!-- Mídia: Fotos e Vídeos -->
+	<section id="midia" class="midia">
+		<div class="container">
+			<div class="section-header">
+				<h2>Fotos e Vídeos</h2>
+				<p>Registros dos nossos eventos e celebrações</p>
+			</div>
+
+			<div class="media-tabs">
+				<button class="media-tab active" data-tab="fotos"><i class="fas fa-image"></i> Fotos</button>
+				<button class="media-tab" data-tab="videos"><i class="fas fa-video"></i> Vídeos</button>
+			</div>
+
+			<!-- Grid de Fotos -->
+			<div class="media-panel active" id="painel-fotos">
+				<div class="media-grid">
+					<!-- 10 de maio de 2025 - Festa de Ogum -->
+					<figure class="media-card" data-type="image" data-src="https://via.placeholder.com/1200x800/016901/ffffff?text=Festa+de+Ogum+-+10+Mai+2025" aria-label="Festa de Ogum - 10 de maio de 2025">
+						<img src="https://via.placeholder.com/400x280/016901/ffffff?text=Festa+de+Ogum" alt="Festa de Ogum">
+						<figcaption>
+							<strong>Festa de Ogum</strong>
+							<span>10 de maio de 2025</span>
+						</figcaption>
+					</figure>
+
+					<!-- 05 de julho - Gira de caboclo e saída de santo -->
+					<figure class="media-card" data-type="image" data-src="https://via.placeholder.com/1200x800/2E2D9C/ffffff?text=Gira+de+Caboclo+e+Sa%C3%ADda+de+Santo+-+05+Jul" aria-label="Gira de caboclo e saída de santo - 05 de julho">
+						<img src="https://via.placeholder.com/400x280/2E2D9C/ffffff?text=Gira+de+Caboclo" alt="Gira de caboclo e saída de santo">
+						<figcaption>
+							<strong>Gira de caboclo e saída de santo</strong>
+							<span>05 de julho</span>
+						</figcaption>
+					</figure>
+
+					<!-- 02 de agosto - Gira de preto velho -->
+					<figure class="media-card" data-type="image" data-src="https://via.placeholder.com/1200x800/016901/ffffff?text=Gira+de+Preto+Velho+-+02+Ago" aria-label="Gira de preto velho - 02 de agosto">
+						<img src="https://via.placeholder.com/400x280/016901/ffffff?text=Preto+Velho" alt="Gira de preto velho">
+						<figcaption>
+							<strong>Gira de Preto Velho</strong>
+							<span>02 de agosto</span>
+						</figcaption>
+					</figure>
+
+					<!-- 16 de agosto - Gira de baiano e boiadeiro -->
+					<figure class="media-card" data-type="image" data-src="https://via.placeholder.com/1200x800/2E2D9C/ffffff?text=Gira+de+Baiano+e+Boiadeiro+-+16+Ago" aria-label="Gira de baiano e boiadeiro - 16 de agosto">
+						<img src="https://via.placeholder.com/400x280/2E2D9C/ffffff?text=Baiano+e+Boiadeiro" alt="Gira de baiano e boiadeiro">
+						<figcaption>
+							<strong>Gira de Baiano e Boiadeiro</strong>
+							<span>16 de agosto</span>
+						</figcaption>
+					</figure>
+
+					<!-- 30 de agosto - Gira de caboclo -->
+					<figure class="media-card" data-type="image" data-src="https://via.placeholder.com/1200x800/016901/ffffff?text=Gira+de+Caboclo+-+30+Ago" aria-label="Gira de caboclo - 30 de agosto">
+						<img src="https://via.placeholder.com/400x280/016901/ffffff?text=Caboclo" alt="Gira de caboclo">
+						<figcaption>
+							<strong>Gira de Caboclo</strong>
+							<span>30 de agosto</span>
+						</figcaption>
+					</figure>
+
+					<!-- 13 de setembro - Festa de erê -->
+					<figure class="media-card" data-type="image" data-src="https://via.placeholder.com/1200x800/2E2D9C/ffffff?text=Festa+de+Er%C3%AA+-+13+Set" aria-label="Festa de erê - 13 de setembro">
+						<img src="https://via.placeholder.com/400x280/2E2D9C/ffffff?text=Festa+de+Er%C3%AA" alt="Festa de erê">
+						<figcaption>
+							<strong>Festa de Erê</strong>
+							<span>13 de setembro</span>
+						</figcaption>
+					</figure>
+
+					<!-- 04 de outubro - visita à aldeia guarani -->
+					<figure class="media-card" data-type="image" data-src="https://via.placeholder.com/1200x800/016901/ffffff?text=Visita+%C3%A0+Aldeia+Guarani+-+04+Out" aria-label="Visita à aldeia guarani - 04 de outubro">
+						<img src="https://via.placeholder.com/400x280/016901/ffffff?text=Aldeia+Guarani" alt="Visita à aldeia guarani">
+						<figcaption>
+							<strong>Visita à Aldeia Guarani</strong>
+							<span>04 de outubro</span>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+
+			<!-- Grid de Vídeos (exemplos com YouTube) -->
+			<div class="media-panel" id="painel-videos">
+				<div class="media-grid">
+					<figure class="media-card" data-type="video" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" aria-label="Vídeo - Festa de Ogum">
+						<div class="video-thumb">
+							<i class="fas fa-play"></i>
+							<img src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Vídeo Festa de Ogum">
+						</div>
+						<figcaption>
+							<strong>Festa de Ogum</strong>
+							<span>10 de maio de 2025</span>
+						</figcaption>
+					</figure>
+
+					<figure class="media-card" data-type="video" data-src="https://www.youtube.com/embed/ysz5S6PUM-U" aria-label="Vídeo - Gira de Caboclo">
+						<div class="video-thumb">
+							<i class="fas fa-play"></i>
+							<img src="https://img.youtube.com/vi/ysz5S6PUM-U/hqdefault.jpg" alt="Vídeo Gira de Caboclo">
+						</div>
+						<figcaption>
+							<strong>Gira de Caboclo</strong>
+							<span>30 de agosto</span>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+
+		<!-- Lightbox -->
+		<div class="lightbox" id="lightbox" aria-hidden="true">
+			<div class="lightbox-content" role="dialog" aria-modal="true" aria-label="Visualização de mídia">
+				<button class="lightbox-close" aria-label="Fechar"><i class="fas fa-times"></i></button>
+				<div class="lightbox-body"></div>
+			</div>
+			<div class="lightbox-backdrop"></div>
+		</div>
+	</section>
+
+	<!-- Desenvolvimentos Mediúnicos -->
+	<section id="desenvolvimentos" class="desenvolvimentos">
+		<div class="container">
+			<div class="section-header">
+				<h2>Desenvolvimentos Mediúnicos</h2>
+				<p>Momentos fechados no terreiro para desenvolver nossos guias e aprender mais sobre a espiritualidade. Espaço dedicado ao seu progresso e firmeza mediúnica.</p>
+			</div>
+			<div class="desenvolvimentos-grid">
+				<div class="dev-card">
+					<h3>Desenvolvimento de Preto Velho</h3>
+					<p class="dev-date"><i class="fas fa-calendar"></i> 29 de julho</p>
+					<p class="dev-desc">Práticas de firmeza, aconselhamento e sustentação da corrente.</p>
+				</div>
+				<div class="dev-card">
+					<h3>Desenvolvimento de Erê</h3>
+					<p class="dev-date"><i class="fas fa-calendar"></i> 09 de setembro</p>
+					<p class="dev-desc">Trabalhos de pureza e alegria para expansão mediúnica consciente.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <!-- Sobre o Templo -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre Nosso Templo</h2>
+                <p>Uma casa de fé e tradição na Umbanda</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Nossa Missão</h3>
+                    <p>O Templo de Umbanda Cabocla Jupira é um espaço sagrado dedicado ao culto dos Orixás e à prática da Umbanda tradicional. Nossa missão é proporcionar acolhimento espiritual, orientação e cura através dos ensinamentos ancestrais.</p>
+                    
+                    <h3>Nossos Valores</h3>
+                    <ul>
+                        <li><i class="fas fa-heart"></i> Respeito à diversidade religiosa</li>
+                        <li><i class="fas fa-hands-helping"></i> Acolhimento e caridade</li>
+                        <li><i class="fas fa-leaf"></i> Conexão com a natureza</li>
+                        <li><i class="fas fa-star"></i> Tradição e sabedoria ancestral</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/500x400/2E2D9C/ffffff?text=Templo+Interno" alt="Templo Interno">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Próximas Giras -->
+    <section id="giras" class="giras">
+        <div class="container">
+            <div class="section-header">
+                <h2>Próximas Giras</h2>
+                <p>Participe das nossas celebrações espirituais</p>
+            </div>
+            <div class="giras-grid">
+                <div class="gira-card">
+                    <div class="gira-date">
+                        <span class="day">15</span>
+                        <span class="month">Dez</span>
+                    </div>
+                    <div class="gira-info">
+                        <h3>Gira de Caboclos</h3>
+                        <p><i class="fas fa-clock"></i> 20:00</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Templo Cabocla Jupira</p>
+                        <p>Gira dedicada aos Caboclos e Caboclas</p>
+                    </div>
+                </div>
+                <div class="gira-card">
+                    <div class="gira-date">
+                        <span class="day">22</span>
+                        <span class="month">Dez</span>
+                    </div>
+                    <div class="gira-info">
+                        <h3>Gira de Pretos Velhos</h3>
+                        <p><i class="fas fa-clock"></i> 19:30</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Templo Cabocla Jupira</p>
+                        <p>Gira de sabedoria e conselhos</p>
+                    </div>
+                </div>
+                <div class="gira-card">
+                    <div class="gira-date">
+                        <span class="day">29</span>
+                        <span class="month">Dez</span>
+                    </div>
+                    <div class="gira-info">
+                        <h3>Gira de Exus</h3>
+                        <p><i class="fas fa-clock"></i> 21:00</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Templo Cabocla Jupira</p>
+                        <p>Gira de limpeza e proteção</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Próximos Eventos -->
+    <section id="eventos" class="eventos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Próximos Eventos</h2>
+                <p>Celebrações e atividades especiais</p>
+            </div>
+            <div class="eventos-grid">
+                <div class="evento-card">
+                    <div class="evento-image">
+                        <img src="https://via.placeholder.com/400x250/016901/ffffff?text=Feijoada+Espiritual" alt="Feijoada">
+                    </div>
+                    <div class="evento-content">
+                        <h3>Feijoada Espiritual</h3>
+                        <p class="evento-date"><i class="fas fa-calendar"></i> 10 de Janeiro de 2024</p>
+                        <p class="evento-time"><i class="fas fa-clock"></i> 12:00 às 18:00</p>
+                        <p>Celebração com comida tradicional e trabalhos espirituais</p>
+                        <a href="#contato" class="btn-secondary">Confirmar Presença</a>
+                    </div>
+                </div>
+                <div class="evento-card">
+                    <div class="evento-image">
+                        <img src="https://via.placeholder.com/400x250/2E2D9C/ffffff?text=Curso+de+Umbanda" alt="Curso">
+                    </div>
+                    <div class="evento-content">
+                        <h3>Curso de Iniciação à Umbanda</h3>
+                        <p class="evento-date"><i class="fas fa-calendar"></i> 15 de Janeiro de 2024</p>
+                        <p class="evento-time"><i class="fas fa-clock"></i> 14:00 às 17:00</p>
+                        <p>Curso básico sobre fundamentos da Umbanda</p>
+                        <a href="#contato" class="btn-secondary">Inscrever-se</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Dúvidas Frequentes</h2>
+                <p>Esclarecemos as principais questões sobre nossa casa</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Como posso agendar uma consulta?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Você pode agendar uma consulta através do formulário de contato em nossa página, por telefone ou WhatsApp. Nossa Mãe de Santo está disponível de segunda a sábado.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Qual o valor das consultas?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Os valores variam conforme o tipo de trabalho espiritual. Entre em contato conosco para obter informações detalhadas sobre preços e formas de pagamento.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Posso participar das giras sem ser filho de santo?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Nossas giras são abertas ao público. Todos são bem-vindos para participar e receber as bênçãos dos Orixás, independentemente de serem iniciados na religião.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Que tipo de trabalhos espirituais vocês realizam?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Realizamos jogos de búzios, consultas espirituais, ebós, feitura de santo, limpeza espiritual, trabalhos de proteção e muito mais. Visite nossa página de serviços para mais detalhes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Contato -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <p>Estamos aqui para ajudar em sua jornada espiritual</p>
+            </div>
+            <div class="contato-content">
+                <div class="contato-info">
+                    <h3>Informações de Contato</h3>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(11) 99999-9999</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>(11) 99999-9999</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contato@caboclajupira.com.br</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Avenida João XXIII, 1684<br>Vila Formosa - São Paulo/SP</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contato-form" id="contatoForm">
+                    <div class="form-group">
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Seu email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="telefone" name="telefone" placeholder="Seu telefone">
+                    </div>
+                    <div class="form-group">
+                        <select id="assunto" name="assunto" required>
+                            <option value="">Selecione o assunto</option>
+                            <option value="consulta">Agendar Consulta</option>
+                            <option value="gira">Informações sobre Giras</option>
+                            <option value="evento">Próximos Eventos</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Templo de Umbanda Cabocla Jupira</h3>
+                    <p>Uma casa de fé, tradição e acolhimento espiritual. Conectando você com os Orixás e a sabedoria ancestral da Umbanda.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="mae-santo.html">Mãe de Santo</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                    <p><i class="fab fa-whatsapp"></i> (11) 99999-9999</p>
+                    <p><i class="fas fa-envelope"></i> contato@caboclajupira.com.br</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horários</h4>
+                    <p>Segunda a Sexta: 9h às 18h</p>
+                    <p>Sábado: 9h às 16h</p>
+                    <p>Domingo: Fechado</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Templo de Umbanda Cabocla Jupira. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
